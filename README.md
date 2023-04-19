@@ -1,13 +1,12 @@
 # Calculadora FrontEnd
 
-# Grupo 6
+### Grupo 6
+Roberto Perez
+Fernando Herrera
+Hellen Pinot
+Jorge Alfaro
 
-# Roberto Perez
-# Fernando Herrera
-# Hellen Pinot
-# Jorge Alfaro
 
+Explicación
 
-# Explicación
-
-# Es una calculadora común que contiene las operaciones basicas, tales como la suma, resta, división y multiplicación. Además se agrega una breve descripción del que es una calculadora y para que se usa.
+Es una calculadora común que contiene las operaciones basicas, tales como la suma, resta, división y multiplicación. Además se agrega una breve descripción del que es una calculadora y para que se usa.

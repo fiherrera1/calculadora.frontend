@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/calculadora.png">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<header>
+    <figure class="cabecera">
+        <h1>Calculadora Online</h1>
+        <figcaption>
+            "¡Haz tus cálculos en línea de manera rápida y sencilla con nuestra calculadora online!"
+        </figcaption>
+    </figure>
+</header>
+<body>
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">¿Que es una calculadora?</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">¿Para que utilizamos la calculadoras?</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Una calculadora es un dispositivo que se utiliza para realizar 
+                    cálculos aritméticos. Aunque las calculadoras modernas se incorporan a menudo en un ordenador de 
+                    propósito general, se diseñan para realizar ciertas operaciones para que sean más flexibles. Por ejemplo, 
+                    existen calculadoras gráficas especializadas en campos matemáticos gráficos como la trigonometría y la estadística. 
+                    También suelen ser más portátiles que la mayoría de los computadores, si bien algunas PDAs tienen tamaños similares a los modelos típicos de calculadora.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    <p>En el pasado, se utilizaban como apoyo al trabajo numérico ábacos, comptómetros, 
+                    ábacos neperianos, tablas matemáticas, reglas de cálculo y máquinas de sumar. 
+                    El término «calculador» se usaba para aludir a la persona que ejercía este trabajo, 
+                    ayudándose también de papel y lápiz. Este proceso de cálculo semimanual era tedioso 
+                    y proclive a errores. Actualmente, las calculadoras son electrónicas y son fabricadas 
+                    por numerosas empresas en tamaños y formas variados. Se pueden encontrar desde modelos
+                     muy baratos del tamaño de una tarjeta de crédito hasta otros más costosos con una impresora incorporada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="calculadora">
+            <input type="text" placeholder="0" class = "input">
+            <button oneclick="Clear()" class = "boton">CL</button>
+            <button oneclick="del()" class = "boton">DEL</button>
+            <button oneclick="display('%')" class = "boton">%</button>
+            <button oneclick="display('/')" class = "boton">/</button>
+            <button oneclick="display('7')" class = "boton">7</button>
+            <button oneclick="display('8')" class = "boton">8</button>
+            <button oneclick="display('9')" class = "boton">9</button>
+            <button oneclick="display('*')" class = "boton">*</button>
+            <button oneclick="display('4')" class = "boton">4</button>
+            <button oneclick="display('5')" class = "boton">5</button>
+            <button oneclick="display('6')" class = "boton">6</button>
+            <button oneclick="display('-')" class = "boton">-</button>
+            <button oneclick="display('1')" class = "boton">1</button>
+            <button oneclick="display('2')" class = "boton">2</button>
+            <button oneclick="display('3')" class = "boton">3</button>
+            <button oneclick="display('+')" class = "boton">+</button>
+            <button oneclick="display('.')" class = "boton">.</button>
+            <button oneclick="display('0')" class = "boton">0</button>
+            <button oneclick="Calculate('')" class="igual">=</button>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script> 
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
